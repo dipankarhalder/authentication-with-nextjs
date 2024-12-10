@@ -9,3 +9,7 @@ export const user_roles = {
   admin: "ADMIN_USER",
   staff: "STAFF_USER",
 }
+
+export const extractInitials = (input: string) => {
+  return input.split('_').map(word => word[0]).join('');
+}
