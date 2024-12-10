@@ -5,10 +5,7 @@ export async function GET(req: Request) {
   try {
     /* Create a response object to clear the token cookie */
     const res = NextResponse.json(
-      {
-        success: true,
-        message: 'You are successfully logged out.',
-      },
+      {success: true, message: 'You are successfully logged out.',},
       {status: 200}
     );
 
@@ -23,10 +20,7 @@ export async function GET(req: Request) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
-      {
-        success: false,
-        error: "Failed to fetch the resource."
-      },
+      {success: false, error: "Failed to fetch the resource."},
       {status: 500}
     );
   }
