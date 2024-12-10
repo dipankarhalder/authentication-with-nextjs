@@ -1,11 +1,12 @@
 import Link from "next/link";
 
-import { auth_router } from "@/router";
-import { SignupComponent } from "@/components/pages/signup";
+import {auth_router} from "@/router";
+import {SignupComponent} from "@/components/pages/signup";
 
 export default function SignupPage() {
   return (
-    <div className="mx-auto flex w-full flex-col justify-center space-y-5 sm:w-[400px] p-8 bg-white shadow-2xl rounded-[8px]">
+    <div
+      className="mx-auto flex w-full flex-col justify-center space-y-5 sm:w-[400px] p-8 bg-white shadow-2xl rounded-[8px]">
       <div className="flex flex-col space-y-2 text-center mb-4">
         <h1 className="text-xl font-semibold tracking-tight mb-0">
           Create an Account
@@ -15,7 +16,7 @@ export default function SignupPage() {
         </p>
       </div>
       <div className="grid gap-6">
-        <SignupComponent />
+        <SignupComponent/>
       </div>
       <div className="text-center text-sm mt-2">
         <p>
