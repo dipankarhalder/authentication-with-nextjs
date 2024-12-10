@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25536952-b0e1-433d-b76f-971f84a21884" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/api/health/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/db.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +31,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "03__include__database",
+    "git-widget-placeholder": "04__add__toast__msg",
     "last_opened_file_path": "/Users/dipankarhalder/Desktop/workplace/projects/authentication-with-nextjs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
