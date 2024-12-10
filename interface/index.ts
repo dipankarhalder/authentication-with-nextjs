@@ -4,7 +4,11 @@ export type IChildren = {
   children: ReactNode;
 };
 
-/* ---- User basic info */
+export interface IUserSignin {
+  email: string;
+  password: string;
+}
+
 export type IUserRequest = {
   user_id?: string;
   first_name: string;
@@ -14,3 +18,4 @@ export type IUserRequest = {
   email: string;
   password: string;
 }
+

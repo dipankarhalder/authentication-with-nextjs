@@ -5,19 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25536952-b0e1-433d-b76f-971f84a21884" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/(client)/(auth)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/(client)/(auth)/sign-up/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/pages/signup.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/shared/spinner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/httpConfig.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/pages/signin.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(client)/(auth)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(client)/(auth)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(client)/(auth)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(client)/(auth)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(client)/(auth)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(client)/(auth)/sign-up/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(client)/(auth)/sign-up/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/health/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/health/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/signout/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/signout/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/shared/spinner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/shared/spinner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dbConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/dbConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/httpConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/config/httpConfig.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/interface/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/router/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validate/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/validate/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +44,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "09__signup__ui",
+    "git-widget-placeholder": "10__signin__ui",
     "last_opened_file_path": "/Users/dipankarhalder/Desktop/workplace/projects/authentication-with-nextjs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",

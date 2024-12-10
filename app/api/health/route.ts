@@ -1,5 +1,5 @@
-import { NextResponse } from "next/server";
-import { dbConnect } from "@/config/dbConfig";
+import {NextResponse} from "next/server";
+import {dbConnect} from "@/config/dbConfig";
 
 export async function GET() {
   try {
@@ -11,7 +11,7 @@ export async function GET() {
         success: true,
         message: 'Server connected successfully.',
       },
-      { status: 200 }
+      {status: 200}
     );
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
@@ -20,7 +20,7 @@ export async function GET() {
         success: false,
         error: "Failed to fetch the resource."
       },
-      { status: 500 }
+      {status: 500}
     );
   }
 }

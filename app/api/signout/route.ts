@@ -1,4 +1,4 @@
-import { NextResponse } from "next/server";
+import {NextResponse} from "next/server";
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export async function GET(req: Request) {
@@ -9,7 +9,7 @@ export async function GET(req: Request) {
         success: true,
         message: 'You are successfully logged out.',
       },
-      { status: 200 }
+      {status: 200}
     );
 
     /* clear the JWT cookie */
@@ -27,7 +27,7 @@ export async function GET(req: Request) {
         success: false,
         error: "Failed to fetch the resource."
       },
-      { status: 500 }
+      {status: 500}
     );
   }
 }
