@@ -42,7 +42,7 @@ export async function POST(req: Request) {
     }
 
     /* generate the user id before store information */
-    const userIdCreate = `${extractInitials(user_role)}-${first_name.substring(0, 2).toUpperCase()}-${phone.toString().slice(-4)}`;
+    const userIdCreate = `AN${extractInitials(user_role)}-${first_name.substring(0, 2).toUpperCase()}-${phone.toString().slice(-4)}`;
 
     /* hashing password before store information */
     const salt = await bcrypt.genSalt(10);
