@@ -12,7 +12,7 @@ interface MongooseCache {
 
 let cached: MongooseCache = (global as any).mongoose;
 if (!cached) {
-  cached = (global as any).mongoose = { conection: null, promise: null };
+  cached = (global as any).mongoose = {conection: null, promise: null};
 }
 
 export async function dbConnect() {
