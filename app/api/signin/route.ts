@@ -58,7 +58,6 @@ export async function POST(req: Request) {
     /* generate expire time for cookie */
     const expires = new Date();
     expires.setDate(expires.getDate() + 1);
-
     response.cookies.set("token", token, {
       httpOnly: true,
       expires
