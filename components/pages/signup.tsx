@@ -45,7 +45,6 @@ export const SignupComponent = () => {
   const onSubmit = (data: z.infer<typeof SignupSchema>) => {
     setWaiting(true);
     const payload: IUserRequest = {...data}
-    console.log(payload);
 
     auth_signup(payload)
       .then(res => {
