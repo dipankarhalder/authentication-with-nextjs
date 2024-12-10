@@ -17,6 +17,15 @@ export async function POST(req: Request) {
     const body: IUserRequest = await req.json();
     const {first_name, last_name, user_role, phone, email, password} = body;
 
+    /* validate password strength */
+    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+[\]{}|;:,.<>?]).{8,}$/;
+    if (!passwordRegex.test(password)) {
+      return NextResponse.json(
+        {success: false, message: 'Password must contain at least 1 uppercase, 1 lowercase, 1 number, and 1 special character.'},
+        {status: 400}
+      );
+    }
+
     /* validate the existing user using email */
     const user_exist = await Users.findOne({email});
     if (user_exist) {
