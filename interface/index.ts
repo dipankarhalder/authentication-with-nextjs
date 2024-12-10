@@ -4,8 +4,7 @@ export type IChildren = {
   children: ReactNode;
 };
 
-/* All API interfaces */
-/* ---- Register API */
+/* ---- User basic info */
 export type IUserRequest = {
   user_id?: string;
   first_name: string;
