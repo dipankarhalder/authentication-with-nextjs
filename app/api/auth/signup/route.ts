@@ -17,6 +17,13 @@ export async function POST(req: Request) {
     const body: IUserRequest = await req.json();
     const {first_name, last_name, user_role, phone, email, password} = body;
 
+    if (user_role !== "SUPER_USER" && user_role !== "ADMIN_USER" && user_role !== "STAFF_USER") {
+      return NextResponse.json(
+        {success: false, message: `User type is not valid, You can not proceed to create the user.`},
+        {status: 400}
+      );
+    }
+
     /* validate password strength */
     const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()_+[\]{}|;:,.<>?]).{8,}$/;
     if (!passwordRegex.test(password)) {
