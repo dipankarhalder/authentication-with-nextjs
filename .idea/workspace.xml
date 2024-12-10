@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25536952-b0e1-433d-b76f-971f84a21884" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/api/users/lists/route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/health/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/health/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/signin/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/signin/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/signout/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/signout/route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/signup/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/signup/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/me/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/users/me/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/signin/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/signin/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/signout/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/signout/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/signup/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/auth/signup/route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/userslist/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/router/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +37,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "12__code__clean",
+    "git-widget-placeholder": "13__userlist",
     "last_opened_file_path": "/Users/dipankarhalder/Desktop/workplace/projects/authentication-with-nextjs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -48,6 +51,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/api/auth" />
+      <recent name="$PROJECT_DIR$/app/api/users" />
       <recent name="$PROJECT_DIR$/app/(client)/(auth)" />
     </key>
   </component>
