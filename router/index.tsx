@@ -12,6 +12,6 @@ export const admin_router = {
 
 /* all backend public apis */
 export const auth_endpoint = {
-  api_signup: "/api/signup",
-  api_signin: "/api/signin",
+  api_signup: "/api/auth/signup",
+  api_signin: "/api/auth/signin",
 }
