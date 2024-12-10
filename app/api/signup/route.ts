@@ -21,10 +21,7 @@ export async function POST(req: Request) {
     const user_exist = await Users.findOne({email});
     if (user_exist) {
       return NextResponse.json(
-        {
-          success: false,
-          message: `Email ${email} already associated with another user.`
-        },
+        {success: false, message: `Email ${email} already associated with another user.`},
         {status: 400}
       );
     }
@@ -33,10 +30,7 @@ export async function POST(req: Request) {
     const existing_phone = await Users.findOne({phone});
     if (existing_phone) {
       return NextResponse.json(
-        {
-          success: false,
-          message: `Phone no. ${phone} already associated with another user.`
-        },
+        {success: false, message: `Phone no. ${phone} already associated with another user.`},
         {status: 400}
       );
     }
@@ -61,20 +55,13 @@ export async function POST(req: Request) {
     await new_user.save();
 
     return NextResponse.json(
-      {
-        success: true,
-        user_id: userIdCreate,
-        message: `User successfully created.`
-      },
+      {success: true, user_id: userIdCreate, message: `User successfully created.`},
       {status: 200}
     );
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
-      {
-        success: false,
-        error: "Failed to fetch the resource."
-      },
+      {success: false, error: "Failed to fetch the resource."},
       {status: 500}
     );
   }
