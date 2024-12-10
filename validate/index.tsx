@@ -1,4 +1,5 @@
 import {z} from "zod";
+import {user_roles} from "@/utils";
 
 const emailValidate = z.string().email({
   message: "Email must be a valid email address.",
@@ -32,8 +33,8 @@ export const SignupSchema = z.object({
   last_name: z.string().min(2, {
     message: "Last name must be at least 2 characters.",
   }),
-  user_role: z.enum(["SUPER_USER", "ADMIN_USER", "STAFF_USER"], {
-    required_error: "You need to select a users type.",
+  user_role: z.string().refine((role) => user_roles.includes(role), {
+    message: "Invalid user role. Please select a valid role.",
   }),
   email: emailValidate,
   phone: phoneValidate,
