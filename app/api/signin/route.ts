@@ -27,10 +27,7 @@ export async function POST(req: Request) {
     const user = await Users.findOne({email});
     if (!user) {
       return NextResponse.json(
-        {
-          success: false,
-          message: `Email ${email} is not associated with any account, Please enter correct email.`
-        },
+        {success: false, message: `Email ${email} is not associated with any account, Please enter correct email.`},
         {status: 400}
       );
     }
@@ -39,10 +36,8 @@ export async function POST(req: Request) {
     const valid_password = await bcrypt.compare(password, user?.password);
     if (!valid_password) {
       return NextResponse.json(
-        {
-          success: false,
-          message: 'Sorry! You have entered wrong password. Please try again.'
-        }, {status: 400}
+        {success: false, message: 'Sorry! You have entered wrong password. Please try again.'},
+        {status: 400}
       );
     }
 
@@ -56,10 +51,7 @@ export async function POST(req: Request) {
 
     /* store the success response in a variable */
     const response = NextResponse.json(
-      {
-        success: true,
-        message: `${user.first_name} ${user.last_name} successfully logged in`,
-      },
+      {success: true, message: `${user.first_name} ${user.last_name} successfully logged in`,},
       {status: 200}
     );
 
@@ -76,10 +68,7 @@ export async function POST(req: Request) {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
     return NextResponse.json(
-      {
-        success: false,
-        error: "Failed to fetch the resource."
-      },
+      {success: false, error: "Failed to fetch the resource."},
       {status: 500}
     );
   }
